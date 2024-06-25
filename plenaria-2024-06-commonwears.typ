@@ -32,6 +32,26 @@
 
 #new-section-slide("Enhanced Pulverisation Evaluation")
 
+#slide(title: "Dynamic Reconfiguration")[
+  #table(
+    columns: 2,
+    inset: 0.65em,
+    stroke: none,
+    [
+      We evaluated _PulvReAKt_ in a simulated _large-scale city event_ where the user were equipped with a smartphone.
+
+      Via *pulverisation* we moved the $#math.beta$ from the cloud and the devices based on the smartphone charge threshold.
+
+      #alert[We improved the simulation introducing more heterogeneity and improving the consumption model.]
+    ],
+    [
+      #figure(
+        image("figures/simulation-screenshot-poi.png")
+      )
+    ]
+  )
+]
+
 #slide(title: "Improved Power Consumption Model")[
   #align(center)[
     #table(
@@ -172,6 +192,9 @@
 #slide(title: "Deployment Independence and Self-stabilisation")[
   We provided a formal definition of the model via an operational semantics,
   and we proved that the model supports *deployment independence* and *self-stabilisation*.
+
+  == Simulation setup
+  We simulated a rescue scenario in a _city event_ with real GPS traces empirically prove _functional correctness_ and _non-functional benefits_ (_RQ2 and RQ3_).
 ]
 
 #slide(title: "Evaluation: Functional Correctness")[
